@@ -14,13 +14,24 @@ public:
         this->ID = ID;
     }
     
-    Tupla(const Tupla& orig){
-        
-    }
-    ~Tupla(){
-        
+//    Tupla(const Tupla& orig){
+//        
+//    }
+//    ~Tupla(){
+//        
+//    }
+    
+    int getID(){
+        return this->ID;
     }
     
+    void anadirAtributo(string atributo){
+        this->atributos.push_back(atributo);
+    }
+    
+    vector<string> getAtributos(){
+        return this->atributos;
+    }
 private:
     int ID;
     vector<string> atributos;
